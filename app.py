@@ -88,7 +88,7 @@ overlap = st.sidebar.slider("Chunk overlap (words)", min_value=0, max_value=80, 
 model, index, chunks = get_resources(source_path, chunk_size, overlap)
 
 # Text input for the semantic search query
-query = st.text_input("Enter your search query", value="How do I reset my password?")
+query = st.text_input("Enter your search query", value="What is the capital of Cataluña?")
 num_results = st.sidebar.slider("Top K results", min_value=1, max_value=10, value=5)
 
 if query:
